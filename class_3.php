@@ -4,6 +4,8 @@
         protected $email = 'kae@gmail.com';
         public $password = 'kist123';
 
+
+        
         public function login()
         {
             echo $this->username . 'has logged in';
@@ -30,7 +32,7 @@
     }
        
     
-    
+       
         $user = new user();
        // $user->username = 'hd';
         $user->login();
@@ -41,6 +43,7 @@
         
         echo '<br>';
         echo '<br>';
+        echo 'admin information <br>';
         $admin= new Admin();
         $admin->login();
         echo '<br>';
